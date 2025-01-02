@@ -10,7 +10,8 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {"pyright", "clangd", "jdtls"}, -- Aquí defines qué LSPs quieres instalar automáticamente
+        ensure_installed = {"pyright", "clangd", "jdtls", "ts_ls"}, 
+        -- Aquí defines qué LSPs quieres instalar automáticamente
       })
     end
   },
